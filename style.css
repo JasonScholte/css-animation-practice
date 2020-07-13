@@ -1,0 +1,85 @@
+.box {
+    width: 100px;
+    height: 100px;
+    position:absolute;
+
+    
+}
+
+.box:hover {
+    border: 2px solid white;
+    transition: border .5s;
+}
+
+.top-left {
+background-color: lightcoral;
+top: 0;
+left: 0;
+animation: anim--top-left 4s forwards;
+}
+
+.top-right {
+    background-color: lightblue;
+    top: 0;
+    right: 0;
+    animation: anim--top-right 4s forwards;
+}
+
+.bottom-right {
+    background-color: lightgreen;
+    bottom: 0;
+    right: 0;
+    animation: anim--bottom-right 4s forwards;
+}
+
+.bottom-left {
+    background-color: lightgoldenrodyellow;
+    bottom: 0;
+    left: 0;
+    animation: anim--bottom-left 4s forwards;
+}
+
+
+
+/* animation */
+
+@keyframes anim--top-left {
+to{
+top: 50%;
+left: 50%;
+border-radius: 0 0 100px 0;
+background-color: black;
+}
+}
+
+@keyframes anim--top-right {
+    to{
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100px;
+    background-color: black;
+    }
+    }
+
+ @keyframes anim--bottom-right {
+    to{
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100px 0 0 0;
+    background-color: black;
+    }
+    }
+
+    @keyframes anim--bottom-left {
+        to{
+        bottom: 50%;
+        left: 50%;
+        border-radius: 0 100px 0 0;
+        background-color: black;
+        }
+        }
+
+
+/* transitions */
+
+
